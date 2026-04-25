@@ -6,6 +6,14 @@ Welcome to **GuroKo**! This is a full-stack application designed to help users l
 
 If you just cloned this repo, follow these steps to get everything running:
 
+### 📋 Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+- **Node.js** (v16.x or higher) - [Download here](https://nodejs.org/)
+- **npm** (comes with Node.js)
+- **Git** - [Download here](https://git-scm.com/)
+- **VS Code** (recommended editor)
+
 ### 1. Install Dependencies
 In the root directory, run:
 ```bash
