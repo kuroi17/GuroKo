@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { LayoutDashboard, BookOpen, PenTool, GraduationCap } from "lucide-react";
 
+import Login from "./pages/Login";
 import TeacherDashboard from "./pages/TeacherDashboard";
 import StudentDashboard from "./pages/StudentDashboard";
 import GenerateLesson from "./pages/GenerateLesson";
@@ -26,6 +27,7 @@ function App() {
             <span className="text-xl font-bold text-gray-800 tracking-tight">GuroKo</span>
           </Link>
           <div className="flex space-x-4">
+            <Link to="/login" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition">Login</Link>
             <Link to="/teacher" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition">Teacher</Link>
             <Link to="/student" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition">Student</Link>
           </div>
@@ -35,6 +37,7 @@ function App() {
         <main className="flex-1 max-w-7xl mx-auto w-full">
           <Routes>
             <Route path="/" element={<HomeMenu />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/teacher" element={<TeacherDashboard />} />
             <Route path="/student" element={<StudentDashboard />} />
             <Route path="/generate" element={<GenerateLesson />} />
